@@ -6,17 +6,9 @@ This module adds support for accessing external SPI flash.
 
 ```
 cd esp-open-rtos/extras
-git clone https://github.com/kanflo/eor-spiflash.git
-mv eor-spiflash spiflash
+git clone https://github.com/kanflo/eor-spi.git spi
+git clone https://github.com/kanflo/eor-spiflash.git spiflash
 ```
-
-The driver depends on the eor-spi driver:
-
-```
-git clone https://github.com/kanflo/eor-spi.git
-mv eor-spi spi
-```
-
 
 Include the driver in your project makefile as any other extra component:
 

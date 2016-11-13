@@ -65,8 +65,8 @@ typedef struct {
 } spi_flash_t;
 
 
-#define delay_ms(t) vTaskDelay((t) / portTICK_RATE_MS)
-#define systime_ms() (xTaskGetTickCount()*portTICK_RATE_MS)
+#define delay_ms(t) vTaskDelay((t) / portTICK_PERIOD_MS)
+#define systime_ms() (xTaskGetTickCount() * portTICK_PERIOD_MS)
 
 // Turn on debug prints
 #ifdef CONFIG_SPIFLASH_DEBUG
